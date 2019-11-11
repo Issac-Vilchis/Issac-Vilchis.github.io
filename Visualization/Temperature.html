@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Web Visualization</title>
+    <title>Temperature</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -19,31 +19,30 @@
 <body style="background-color: purple;">
         <nav class="navbar navbar-dark" style="background-color: #000000;">
             <div class="row .col-md-1">
-                <a class="navbar-brand" href="index.html">Latitude!</a>
+                <a class="navbar-brand" href="../index.html">Latitude!</a>
             </div>
             <div class="row .col-md-3 .col-md-offset-8">
-                <a class="navbar-brand" href="data/Comparison.html">Comparisons</a>
-                <a class="navbar-brand" href="data/weather_data.html">Dataset</a>
+                <a class="navbar-brand" href="../data/Comparison.html">Comparisons</a>
+                <a class="navbar-brand" href="../data/weather_data.html">Dataset</a>
                 <div class="btn-group">
                     <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        Visualizations
+                        Visualisations
                     </button>
-
-                    <div class="dropdown-menu"> 
-                        <a class="dropdown-item" href="Visualization/Cloud.html">Cloud</a>
-                        <a class="dropdown-item" href="Visualization/Humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="Visualization/Temperature.html">Temperature</a>
-                        <a class="dropdown-item" href="Visualization/Wind.html">Wind</a>
+    
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Cloud.html">Cloud</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="Temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="Wind.html">Wind</a>
                     </div>
-                        
+                            
                 </div>
             </div>
         </nav>
     <header>
-        <h1 style="color: white;">Weather Analyzation!</h1>
+        <h1 style="color: white;">Temperature Analyzation!</h1>
     </header>
-
 
 <div class="content">
     <div class="container-fluid">
@@ -52,13 +51,12 @@
                 <div class="box">
                     <div class="page-header">
                         <br>
-                        <h1 class="title" style="color: white;">Summary: Latitude vs. X</h1>
+                        <h1 class="title" style="color: white;">Max Temperature</h1>
                     </div>
                     <div class="box">
-                        <img src="./Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="250" width="250" align="left">
-                        <p class="category" style="color: white;"> The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities.
-                         </p>
-                         <p class="category" style="color: white;">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis,as well as explanations and descriptions of any trends and correlations witnessed.
+                        <img src="../Resources/assets/images/Fig1.png" alt="Latitude vs. Humidity" height="450" width="650" align="center">
+                            <br>
+                        <p class="category" style="color: white;"> The data for the temperature present the fact that the max temperature is around 110 degrees at a latitude of -20 to -22 while the lowest temperature is less than -50 degrees at a latitude of around 70. After hitting the latitude of -55, the temperature rises until it reaches the latitude of -20 and goes steady until it reaches a latitude of 10 only for the temperature to start decreasing.
                          </p>
                     </div>
                 </div>
@@ -69,11 +67,11 @@
                         <br>
                         <h1 class="title" style="color: white;">Visualizations</h1>
                     </div>
-                    <div class="box">
-                        <a href="Visualization/Temperature.html"><img src="./Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
-                        <a href="Visualization/Humidity.html"><img src="./Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
-                        <a href="Visualization/Cloud.html"><img src="./Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
-                        <a href="Visualization/Wind.html"><img src="./Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+                    <div class="box" style="color: white;">
+                        <a href="../Visualization/Temperature.html"><img src="../Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" height="160" width="200"></a>
+                        <a href="../Visualization/Humidity.html"><img src="../Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" height="160" width="200"></a>
+                        <a href="../Visualization/Cloud.html"><img src="../Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" height="160" width="200"></a>
+                        <a href="../Visualization/Wind.html"><img src="../Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" height="160" width="200"></a>
                      </div>
                  </div>
              </div>
